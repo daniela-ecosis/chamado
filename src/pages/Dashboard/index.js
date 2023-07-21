@@ -18,7 +18,7 @@ const listRef = collection(db, "chamados")
 export default function Dashboard() {
     const { logout } = useContext(AuthContext);
 
-    const [chamados, setChamados] = useState([])
+    const [chamados, setChamados] = useState([])  //
     const [loadChamados, setLoadChamados] = useState(true)
     
     const [isEmpty, setIsEmpty] = useState(false)
